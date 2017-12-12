@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html>
+    <title>Solidny Posprocessor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”Description” content=”tani post solidcam solidworks postprocessor alphacam cam”>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <head>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- jQuery library (served from Google) -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- bxSlider Javascript file -->
+        <script src="/js/jquery.bxslider.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+        <script type=text/javascript>
+            $(document).ready(function(){
+                $('.bxslider').bxSlider();
+
+            });
+        </script>
+      
+        
+        
+    </head>
+
+
+    <body>
+       
+       <script>
+    
+    $(document).ready(function(){
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+});
+    </script>
+
+       
+       
+        <a href=".">
+            <div class="logo-menu">
+                <img alt src="ivicon.jpg"   title="Najlepsze posptocessory SolidCAM">
+            </div>
+        </a>
+
+
+        <div id='cssmenu'>
+            <ul>
+                <li class='active'><a href='#aboutus'>O nas</a></li>
+                <li><a href='#implementation'>Wdrożenia</a></li>
+                <li><a href='#offer'>Wycena postprocessora</a></li>
+                <li><a href='#contact'>Kontakt</a></li>
+
+            </ul>
+        </div>
+
+
+        <section>
+          <div class="video-header">
+           <!-- <div id="videoWithNoJs" class="videoWrapper">
+                <script src="/js/videoWithNoJs/videoWithNoJs.js"> </script>-->
+                <iframe  src="https://www.youtube.com/embed/fbFeNkFPlMA?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allowfullscreen ></iframe>
+            </div>
+
+        </section>
+   
+ <!--   W BODY ZNAJDUJE SIE GALERIA ORAZ FORMULARZ ZGLOSZENIOWY-->
+   
+ <script>
+    AOS.init();
+  </script>
+
+        <section  class="aboutus-section" id="aboutus">
+
+            <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+            <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>       
+           <article class="aboutus-article">
+               <h2>Oferujemy kompleksowe wdrożenie postrprocessorów w konkurencyjnej cenie
+            </h2>
+            <br> 
+ <h2>Tworzymy również grafiki symulacji maszynowych</h2>
+               
+           </article> 
+
+            <div  data-aos="fade_up" style="text-align: center;" id="programs">
+                <a href="https://www.solidcam.com/" target="_blank">
+                    <img src="/images/sc_logo_colored.png" alt="SolidCAM"/>
+                </a>
+                <a href="http://www.inventorcam.com/pl/" target="_blank">
+                    <img src="/images/InventorCAM_logo_header.png" alt="InventorCAM"/>
+                </a>
+                <a href="https://camworks.com/" target="_blank">
+                    <img src="/images/camworks.png" alt="InventorCAM"/>
+                </a>
+
+            </div>
+           
+     <!--       <figure>
+
+                <img src="/images/medal.gif" alt="szybki czas wdrożenia"/>
+            </figure>-->
+        </section>
+
+
+        <!-- <div id="medal">
+<img src="/images/medal.gif" alt="szybki czas wdrożenia"/>
+
+</div> 
+-->
+
+        <div id="implementation" >
+
+            <link rel="stylesheet" a href="js/jquery.bxslider.css">
+            <ul class="bxslider">
+                <!--  <h1 style="text-align: center; z-index: 5;">Nasze wdrożenia</h1>-->
+                <center> <li><img style=" text-align: center;"src="/images/clx450.jpg" /></li></center> 
+                <center> <li><img style=" text-align: center;"src="/images/millturn1.jpg" /></li></center> 
+
+            </ul>  
+
+        </div>
+
+
+
+
+        <section id="sectionrpf">
+           <!-- <link rel="stylesheet" href="style_footer.css">
+-->
+
+
+            <div style="width:100%; height:auto; text-align: center; padding-right: 15em; 
+                        padding-left: 15em;" id="offer"method="get" autocomplete="on" class="RFP">
+
+                <h1>
+                    W celu kontaktu lub utorzenia zpytania ofertowego proszę o wypełnienie formularza poniżęj
+                </h1>
+                <form id="contact" action="pdfGenerator/form.php" method="POST">
+                    <p>
+                        <!--<label> Nazwa firmy :</label>-->
+                        <input placeholder="Nazwa firmy" type="text" name="c_name">
+                    </p>
+                    <p>
+                        <!-- <label> Email :</label>-->
+                        <input placeholder="Email" type="text" name="email">
+                    </p>
+                    <p>
+
+                        <input placeholder="Numer kontaktowy" type="text" name="phone1">
+                    </p>
+                    <p>
+
+                        <input placeholder="Nazwa maszyny (np. DOOSAN DNM 500)" type="text" name="machine">
+                    </p>
+                    <p>
+                        <input placeholder="Sterowanie maszyny (np. Sinumerik 840 D)" type="text" name="controler">
+                    </p>
+
+                    <p>
+                        <input placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
+                    </p>
+
+                    <script>
+                        /* Script written by Adam Khoury @ DevelopPHP.com */
+                        /* Video Tutorial: http://www.youtube.com/watch?v=EraNFJiY0Eg */
+                        function _(el){
+                            return document.getElementById(el);
+                        }
+                        function uploadFile(){
+                            var file = _("file1").files[0];
+                            // alert(file.name+" | "+file.size+" | "+file.type);
+                            var formdata = new FormData();
+                            formdata.append("file1", file);
+                            var ajax = new XMLHttpRequest();
+                            ajax.upload.addEventListener("progress", progressHandler, false);
+                            ajax.addEventListener("load", completeHandler, false);
+                            ajax.addEventListener("error", errorHandler, false);
+                            ajax.addEventListener("abort", abortHandler, false);
+                            ajax.open("POST", "file_upload_parser.php");
+                            ajax.send(formdata);
+                        }
+                        function progressHandler(event){
+                            _("loaded_n_total").innerHTML = "Uploaded "+event.loaded+" bytes of "+event.total;
+                            var percent = (event.loaded / event.total) * 100;
+                            _("progressBar").value = Math.round(percent);
+                            _("status").innerHTML = Math.round(percent)+"% uploaded... please wait";
+                        }
+                        function completeHandler(event){
+                            _("status").innerHTML = event.target.responseText;
+                            _("progressBar").value = 0;
+                        }
+                        function errorHandler(event){
+                            _("status").innerHTML = "Upload Failed";
+                        }
+                        function abortHandler(event){
+                            _("status").innerHTML = "Upload Aborted";
+                        }
+                    </script>
+
+                    <input type="file" name="file1" id="file1"><br>
+                    <input type="button" value="Upload File" onclick="uploadFile()">
+                    <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+                    <h3 id="status"></h3>
+                    <p id="loaded_n_total"></p>
+                    <button name="submit" type="submit" name="sendMail" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
+
+
+
+                </form>
+                <form id="upload_form" enctype="multipart/form-data" method="post">
+                    <input type="file" name="file1" id="file1"><br>
+                    <input type="button" value="Upload File" onclick="uploadFile()">
+                    <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+                    <h3 id="status"></h3>
+                    <p id="loaded_n_total"></p>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+    </body>
+    <!--<div onLoad="ChangeCaptcha()">
+
+<input type="text" id="randomfield" disabled>
+
+<script>
+// Do not remove this (it's just a comment and won't effect the functions)
+// SimpleCaptcha v1.0 © Anudeep Tubati
+function ChangeCaptcha() {
+var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+var string_length = 6;
+var ChangeCaptcha = '';
+for (var i=0; i<string_length; i++) {
+var rnum = Math.floor(Math.random() * chars.length);
+ChangeCaptcha += chars.substring(rnum,rnum+1);
+}
+document.getElementById('randomfield').value = ChangeCaptcha;
+}
+function check() {
+if(document.getElementById('CaptchaEnter').value == document.getElementById('randomfield').value ) {
+window.open('https://www.google.co.in','_self');
+}
+else {
+alert('Please re-check the captcha');
+}
+}
+</script>
+<br><br>
+<input id="CaptchaEnter" size="20" maxlength="6" />
+<br><br>
+<button onclick="check()">Done</button>
+</div>-->
+
+    <footer style="  
+
+                   width:100%;
+                   height:60px;   /* Height of the footer */
+                   background:#6cf;
+                   text-align: center;">
+        <!--<link rel="stylesheet" href="style_footer.css">
+
+<div class="container">  
+
+<form id="contact" action="mail.php" method="POST">
+<h4> Masz pytanie? Napisz!!!</h4>
+<fieldset>
+<input placeholder="Imię i nazwisko" type="text" tabindex="1" required autofocus>
+</fieldset>
+<fieldset>
+<input placeholder="Adres mailowy" type="email" tabindex="2" required>
+</fieldset>
+<fieldset>
+<input placeholder="Numer kontaktowy" type="tel" tabindex="3" required>
+</fieldset>
+
+<fieldset>
+<textarea placeholder="Wprowadź swoją wiadomość..." type="message" tabindex="5" required></textarea>
+</fieldset>
+<fieldset>
+
+</fieldset>
+</form>
+
+<button name="submit" type="submit" name="sendMail" value="oknoAlert" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
+<script>
+function oknoAlert() {
+alert('To jest okienko alert');
+}
+
+document.getElementById('confirm').addEventListener('click', function() {
+oknoConfirm()
+});
+</script>
+</div>-->
+        <h4>site design / logo © 2017 jkd1992 </h4>
+    </footer>
+</html>
