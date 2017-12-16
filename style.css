@@ -1,17 +1,50 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 * {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
 }
+
+.sc-logo img{
+    float:left;
+    margin-right: 20px;
+    clear: left;
+    display: inline;
+}
+.ic-logo img{
+    float:right;
+    margin-right: 20px;
+    clear: left;
+    display: inline;
+}
+.cw-logo img{
+    float:left;
+    margin-right: 20px;
+    clear: left;
+    display: inline;
+}
+.sc-logo h2{
+    float: right;
+   display: inline;
+}
+.ic-logo h2{
+    float: left;
+  display: inline;
+}
+.cw-logo h2{
+    float: right;
+   display: inline;
+    position: relative
+}
+
 
 html{
     font-size: 62.5%;
@@ -32,22 +65,22 @@ header{
 }
 
 .aboutus-section{
-margin: 0;
+    margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
 
     font-size: 1.6rem;
     border: 0 0;
-   
+
     position:relative;
     overflow:hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(images/cnc-jobs-in-greece.gif);
- 
-  font-family: Raleway, sans-serif;
+
+    font-family: Raleway, sans-serif;
 }
 
 .aboutus-article h2{
@@ -56,37 +89,37 @@ margin: 0;
     padding: 10px;
     margin-top: 30px;
     color: greenyellow
- 
+
 }
 
- /*.aboutus-section{
-    
-    padding:  0 ;
-    margin 0 0;
-    border: 0 0;  
-    height:100vh;
-    width:auto;
-    position:relative;
-    overflow:hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(images/Multistack2.jpg);
+/*.aboutus-section{
+
+padding:  0 ;
+margin 0 0;
+border: 0 0;  
+height:100vh;
+width:auto;
+position:relative;
+overflow:hidden;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-image: url(images/Multistack2.jpg);
 
 }*/
 
 
 .RFP h1{
-   text-align: center;
+    text-align: center;
     font-size: 3em;
     line-height: 150%;
-  
-     font-family: 'Anton', sans-serif;
-     color: #e74c3c;
+
+    font-family: 'Anton', sans-serif;
+    color: #e74c3c;
 }
 
 #sectionrpf{
-   background-image: url(images/SIEMENS_CNC_840DSL.jpg);
+    background-image: url(images/SIEMENS_CNC_840DSL.jpg);
     background-size: cover;
 }
 
@@ -103,15 +136,14 @@ margin: 0;
     box-shadow: 0px 2px 2px 0px rgba(0,0,0,.2);
     border-top: 0;
     text-align: center;
-border-radius: 50%;
+    border-radius: 50%;
     box-sizing: border-box;
     z-index: 1;
     padding: 7px;
 
-
-
 }
-.logosale img{
+.logosale img
+{
     position: relative;
     z-index: -1;
     right: 5px;
@@ -119,11 +151,14 @@ border-radius: 50%;
 }
 
 
-#programs img{
-    height: 100px;
+#programs img
+{
+    height: 75%;
     width:25%;
     z-index: 1;
-    display: inline-block ;
+    display: flex;
+/*    flex-direction: column;
+    flex-wrap: wrap;*/
 
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
@@ -133,7 +168,7 @@ border-radius: 50%;
     padding: 5px;
     cursor: pointer;
     box-shadow: 0px 2px 2px 0px #AFAAA9;
-    margin:5px ;
+    margin:1em ;
     vertical-align:top;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
@@ -142,7 +177,7 @@ border-radius: 50%;
 
 }
 #rpfsection{
-     padding: 0 0 0 0;
+    padding: 0 0 0 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -329,70 +364,70 @@ figure img{
 }
 /*
 #cssmenu.small-screen {
-    width: 100%;
+width: 100%;
 }
 #cssmenu.small-screen > ul,
 #cssmenu.small-screen.align-center > ul {
-    width: 100%;
-    text-align: left;
+width: 100%;
+text-align: left;
 }
 #cssmenu.small-screen > ul > li,
 #cssmenu.small-screen.align-center {
-    float: none;
-    display: block;
-    border-top: 1px solid rgba(100, 100, 100, 0.1);
+float: none;
+display: block;
+border-top: 1px solid rgba(100, 100, 100, 0.1);
 }
 #cssmenu.small-screen > ul > li:hover > a,
 #cssmenu.small-screen > ul > li > a:hover {
-    color: #dff2fa;
-    -webkit-transform: none;
-    -moz-transform: none;
-    transform: none;
-    -ms-transform: none;
+color: #dff2fa;
+-webkit-transform: none;
+-moz-transform: none;
+transform: none;
+-ms-transform: none;
 }
 #cssmenu.small-screen > ul > li > a::before {
-    display: none;
+display: none;
 }
 #cssmenu.small-screen #menu-button {
-    display: block;
-    padding: 16px 20px;
-    cursor: pointer;
-    font-size: 14px;
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background: #FADE4D;
+display: block;
+padding: 16px 20px;
+cursor: pointer;
+font-size: 14px;
+text-decoration: none;
+color: #ffffff;
+text-transform: uppercase;
+letter-spacing: 1px;
+background: #FADE4D;
 }
 #cssmenu.small-screen #menu-button:after {
-    content: "";
-    position: absolute;
-    right: 20px;
-    top: 17px;
-    display: block;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    border-top: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-    width: 22px;
-    height: 3px;
+content: "";
+position: absolute;
+right: 20px;
+top: 17px;
+display: block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+border-top: 2px solid #ffffff;
+border-bottom: 2px solid #ffffff;
+width: 22px;
+height: 3px;
 }
 #cssmenu.small-screen #menu-button.menu-opened:after {
-    border-top: 2px solid #dff2fa;
-    border-bottom: 2px solid #dff2fa;
+border-top: 2px solid #dff2fa;
+border-bottom: 2px solid #dff2fa;
 }
 #cssmenu.small-screen #menu-button:before {
-    content: "";
-    position: absolute;
-    right: 20px;
-    top: 27px;
-    display: block;
-    width: 22px;
-    height: 2px;
-    background: #ffffff;
+content: "";
+position: absolute;
+right: 20px;
+top: 27px;
+display: block;
+width: 22px;
+height: 2px;
+background: #ffffff;
 }
 #cssmenu.small-screen #menu-button.menu-opened:before {
-    background: #dff2fa;
+background: #dff2fa;
 }
 */
