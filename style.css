@@ -20,15 +20,18 @@
            flex-direction: row;
            -webkit-align-items: center;
            align-items: center;
-           
+           width: 100%;
            flex-wrap: wrap;
-           min-width: 320px;
-           max-width: 1220px;
+          /* min-width: 320px;
+           max-width: 1220px;*/
+    
         }
-        .flex-item {
+ .flex-item {
             display:flex;
         align-items: center;
-          
+        text-align: center;
+          padding: 5px;
+		flex: 1 1 20%;
         /*height: 120px;
         width: 300px;
         background-color: #e46119;
@@ -36,20 +39,22 @@
  /*       margin: 3px;
         padding: 10px 0 0 10px;*/
         }
-.flex-item img{
+ .flex-item img{
     flex-grow:0;
     flex-shrink:0;
       height: 15em;
             width: 30em;
     padding: 2em;
+   
+    
 }
 
-
-        span {
-           
-            padding: 20px;
+    span {
+       
             box-sizing: border-box;
-            font-size: 2.4rem;
+            font-size: 2.6rem;
+           font-family: Raleway, sans-serif;
+       
         }
 /*.sc-logo img{
     float:left;
