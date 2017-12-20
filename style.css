@@ -236,6 +236,11 @@ background-image: url(images/Multistack2.jpg);
     transition: all 0.3s;
      position: relative;
       flex-grow:1;
+          background-image: url(images/solidcam_imachining.jpg);
+ background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
     }
 
 .aboutus-section .flex-container .programy-img:nth-child(2) {
