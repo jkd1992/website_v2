@@ -27,38 +27,38 @@
 
             });
         </script>
-      
-        
-        
+
+
+
     </head>
 
 
     <body>
-       
-       <script>
-    
-/*Improved Animated Scrolling Script for Same-Page Links*/
-           
-    $(document).ready(function(){
-  $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body')
-        .animate({scrollTop: targetOffset}, 1000);
-       return false;
-      }
-    }
-  });
-});
-    </script>
 
-       
-       
+        <script>
+
+            /*Improved Animated Scrolling Script for Same-Page Links*/
+
+            $(document).ready(function(){
+                $('a[href*=#]').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                        && location.hostname == this.hostname) {
+                        var $target = $(this.hash);
+                        $target = $target.length && $target
+                        || $('[name=' + this.hash.slice(1) +']');
+                        if ($target.length) {
+                            var targetOffset = $target.offset().top;
+                            $('html,body')
+                                .animate({scrollTop: targetOffset}, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+
+
         <a href=".">
             <div class="logo-menu">
                 <img alt src="ivicon.jpg"   title="Najlepsze posptocessory SolidCAM">
@@ -75,85 +75,83 @@
 
             </ul>
         </div>
-        
+
         <section>
-          <div class="video-header">
-           <!-- <div id="videoWithNoJs" class="videoWrapper">
-                <script src="/js/videoWithNoJs/videoWithNoJs.js"> </script>-->
+            <div class="video-header">
+                <!-- <div id="videoWithNoJs" class="videoWrapper">
+<script src="/js/videoWithNoJs/videoWithNoJs.js"> </script>-->
                 <iframe  src="https://www.youtube.com/embed/fbFeNkFPlMA?autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allowfullscreen ></iframe>
             </div>
 
         </section>
-   
- <!--   W BODY ZNAJDUJE SIE GALERIA ORAZ FORMULARZ ZGLOSZENIOWY-->
-   
- <script>
-    AOS.init();
-  </script>
+
+        <!--   W BODY ZNAJDUJE SIE GALERIA ORAZ FORMULARZ ZGLOSZENIOWY-->
+
+        <script>
+            AOS.init();
+        </script>
 
         <section  class="aboutus-section" id="aboutus">
 
             <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
             <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>       
-           <!--<article class="aboutus-article">
-               <h2>Oferujemy kompleksowe wdrożenie postrprocessorów w konkurencyjnej cenie
-            </h2>
-            <br> 
- <h2>Tworzymy również grafiki symulacji maszynowych</h2>
-               
-           </article> -->
-<span>Od wielu lat zajmujemy się kompleksowym wdrażaniem postprocessorów, gwarantujemy konkurencyjne ceny oraz błyskawieczne wdrożenie.<b>Wypełnij formularz w celu poznania ceny!!!</b> </span>
+            <!--<article class="aboutus-article">
+<h2>Oferujemy kompleksowe wdrożenie postrprocessorów w konkurencyjnej cenie
+</h2>
+<br> 
+<h2>Tworzymy również grafiki symulacji maszynowych</h2>
+
+</article> -->
+            <span>Od wielu lat zajmujemy się kompleksowym wdrażaniem postprocessorów, gwarantujemy konkurencyjne ceny oraz błyskawieczne wdrożenie.<b>Wypełnij formularz w celu poznania ceny!!!</b> </span>
             <div  class="flex-container">
-                
-                   <div  data-aos="fade-right"
-    
-     data-aos-easing="ease-in-sine"  class="programy-img">
-                  <p> <a href="https://www.solidcam.com/" target="_blank">
-                    <img src="/images/sc_logo_colored.png" alt="SolidCAM"/>
-                    </a></p>
-                       
-                 <!--      <dix class="flex-item">
-               <span>Oferujemy kompleksowe wdrożenie postrprocessorów w konkurencyjnej cenie
-            </span>        
-                       
-                       </dix>
-               
-                -->
-                 
-                   </div>
-                   
-                        
+
+                <div  data-aos="fade-right"
+
+                     data-aos-easing="ease-in-sine"  class="programy-img">
+                    <p> <a href="https://www.solidcam.com/" target="_blank">
+                        <img src="/images/sc_logo_colored.png" alt="SolidCAM"/>
+                        </a></p>
+
+                    <!--      <dix class="flex-item">
+<span>Oferujemy kompleksowe wdrożenie postrprocessorów w konkurencyjnej cenie
+</span>        
+
+</dix>
+
+-->
+
+                </div>
+
+
                 <div data-aos="fade-left"
-     
-     data-aos-easing="ease-in-sine" class="programy-img"> 
-                
-              <p>  <a  href="http://www.inventorcam.com/pl/"    target="_blank">
-                    <img src="/images/cam-pl.png" alt="SolidWorks CAM"/>
-                
-                </a></p>
-            <!--    <div  class="flex-item"> 
-                <span>Tworzymy również grafiki symulacji maszynowych</span>
-                </div>-->
+
+                     data-aos-easing="ease-in-sine" class="programy-img"> 
+
+                    <p>  <a  href="https://google.pl/" target="_blank">
+                        <img src="/images/cam-pl.png" alt="SolidWorks CAM"/>
+
+                        </a></p>
+
                 </div>
-                
+
                 <div data-aos="fade-up-left"
-     class="programy-img">
-               <p> <a  href="https://camworks.com/" target="_blank">
-                    <img src="/images/camworks.png" alt="InventorCAM"/>
-                </a> </p>
-                    
-                    
-        <!--            <div class="flex-item">
-                    
-                       <span>Gwarantujemy sprawne działanie <post>    </post>procesora oraz krótki czas wdrożenia</span>
-                    </div>-->
-             
-    
+                     class="programy-img">
+                    <p> <a  href="https://camworks.com/" target="_blank">
+                        <img src="/images/camworks.png" alt="CAMWorks"/>
+                        </a> </p>
+
+
+                    <!--            <div class="flex-item">
+
+<span>Gwarantujemy sprawne działanie <post>    </post>procesora oraz krótki czas wdrożenia</span>
+</div>-->
+
+
                 </div>
-                
+
             </div>
-           
-    
+
+
         </section>
 
 
@@ -173,14 +171,14 @@
 
 
         <section id="sectionrpf">
-       
 
-            <div style="width:100%; height:auto; text-align: center; padding-right: 15em; 
+
+            <div style="width:100%; height:50%; text-align: center; padding-right: 15em; 
                         padding-left: 15em;" id="offer"method="get" autocomplete="on" class="RFP">
 
-                <h1>
-                    W celu kontaktu lub utorzenia zpytania ofertowego proszę o wypełnienie formularza poniżęj
-                </h1>
+                <span>
+                    Skontaktuj się z nami, podamy Ci najlepszą cenę!!!
+                </span>
                 <form id="contact" action="pdfGenerator/form.php" method="POST">
                     <p>
                         <!--<label> Nazwa firmy :</label>-->
@@ -314,12 +312,7 @@ alert('Please re-check the captcha');
 <button onclick="check()">Done</button>
 </div>-->
 
-    <footer style="  
-
-                   width:100%;
-                   height:60px;   /* Height of the footer */
-                   background:#6cf;
-                   text-align: center;">
+    <footer class="footer-style">
         <!--<link rel="stylesheet" href="style_footer.css">
 
 <div class="container">  
@@ -355,6 +348,6 @@ oknoConfirm()
 });
 </script>
 </div>-->
-        <h4>site design / logo © 2017 jkd1992 </h4>
+        <span>site design / logo © 2017 jkd1992 </span>
     </footer>
 </html>

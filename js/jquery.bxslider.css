@@ -9,10 +9,12 @@
   *zoom: 1;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
+
 }
 .bx-wrapper img {
   max-width: 100%;
   display: block;
+    
 }
 .bxslider {
   margin: 0;
@@ -92,6 +94,7 @@ ul.bxslider {
 .bx-wrapper .bx-prev {
   left: 10px;
   background: url('images/controls.png') no-repeat 0 -32px;
+ 
 }
 .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
@@ -170,6 +173,8 @@ ul.bxslider {
   background: #666;
   background: rgba(80, 80, 80, 0.75);
   width: 100%;
+  
+    
 }
 .bx-wrapper .bx-caption span {
   color: #fff;

@@ -15,35 +15,35 @@
 
 /*
 .sc-logo img{
-    float:left;
-    margin-right: 20px;
-    clear: left;
-    display: inline;
+float:left;
+margin-right: 20px;
+clear: left;
+display: inline;
 }
 .ic-logo img{
-    float:right;
-    margin-right: 20px;
-    clear: left;
-    display: inline;
+float:right;
+margin-right: 20px;
+clear: left;
+display: inline;
 }
 .cw-logo img{
-    float:left;
-    margin-right: 20px;
-    clear: left;
-    display: inline;
+float:left;
+margin-right: 20px;
+clear: left;
+display: inline;
 }
 .sc-logo h2{
-    float: right;
-   display: inline;
+float: right;
+display: inline;
 }
 .ic-logo h2{
-    float: left;
-  display: inline;
+float: left;
+display: inline;
 }
 .cw-logo h2{
-    float: right;
-   display: inline;
-    position: relative
+float: right;
+display: inline;
+position: relative
 }
 
 */
@@ -152,33 +152,11 @@ background-image: url(images/Multistack2.jpg);
     top:0;
 }
 
-.aboutus-section .flex-container{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap:wrap;
-
-    -webkit-box-orient: horizontal; 
-    -moz-box-orient: horizontal;
-    box-orient: horizontal;
-    flex-direction: row;
-
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    justify-content: center;
-
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;  
-    align-items: center;}
-
+/*FLEX BOX DLA SEKSJI ABOUTUS*/
 
 .aboutus-section .flex-container 
 {
- 
+
 
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
@@ -198,17 +176,11 @@ background-image: url(images/Multistack2.jpg);
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    
-
-    }
-/*    align-self: auto;*/
 
 
+}
 
-
-
-
- .programy-img:nth-child(1) {
+.programy-img:nth-child(1) {
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
@@ -218,7 +190,7 @@ background-image: url(images/Multistack2.jpg);
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
-        height: 100%;
+    height: 100%;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
@@ -226,23 +198,23 @@ background-image: url(images/Multistack2.jpg);
     border-top-right-radius: 5px;
     border-bottom-right-radius:5px;
     background-color: white;
-   padding: 1.2em;
+    padding: 1.2em;
     cursor: pointer;
     box-shadow: 0px 2px 2px 0px #AFAAA9;
     margin:1em;
-  box-sizing: border-box;
+    box-sizing: border-box;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-     position: relative;
-      flex-grow:1;
-          background-image: url(images/solidcam_imachining.jpg);
- background-position: center center;
+    position: relative;
+    flex-grow:1;
+    background-image: url(images/solidcam_imachining.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
     background-size: cover;
-     overflow: hidden;
-    }
+    overflow: hidden;
+}
 
 .aboutus-section .flex-container .programy-img:nth-child(2) {
     -webkit-order: 0;
@@ -253,10 +225,10 @@ background-image: url(images/Multistack2.jpg);
     flex: 0 1 auto;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
-box-sizing: border-box;
-        flex-grow:2;
-text-align: center;
-        height: 100%;
+    box-sizing: border-box;
+    flex-grow:2;
+    text-align: center;
+    height: 100%;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
@@ -264,22 +236,22 @@ text-align: center;
     border-top-right-radius: 5px;
     border-bottom-right-radius:5px;
     background-color: white;
-  padding: 1.41em;
+    padding: 1.41em;
     cursor: pointer;
     box-shadow: 0px 2px 2px 0px #AFAAA9;
     margin:1em ;
-box-sizing: border-box;
+    box-sizing: border-box;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     text-align: center;
-         background-image: url(images/solidworkscam.jpg);
- background-position: center 30%;
+    background-image: url(images/solidworkscam.jpg);
+    background-position: center 30%;
     background-repeat: no-repeat;
     text-align: center;
     background-size: cover;
     overflow: hidden;
-    }
+}
 
 
 .aboutus-section .flex-container .programy-img:nth-child(3) {
@@ -293,7 +265,7 @@ box-sizing: border-box;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-          height: 100%;
+    height: 100%;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
@@ -305,65 +277,66 @@ box-sizing: border-box;
     cursor: pointer;
     box-shadow: 0px 2px 2px 0px #AFAAA9;
     margin:1em ;
-  box-sizing: border-box;
+    box-sizing: border-box;
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     flex-grow:3;
-     background-image: url(images/camworks_multiblade.jpg);
- background-position: center center;
+    background-image: url(images/camworks_multiblade.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
     background-size: cover;
-     
-  overflow: hidden;
 
-    }
+    overflow: hidden;
 
-
+}
 
 img {max-width:100%;}
 
 
+/*-------------------------------------------*/
+
+/*--V1.1.9 DODANIE SHINING HOVER DLA IKONEK */
 
 .programy-img:after {
-  content: "";
-  position: absolute;
-  top: 110%;
-  left: -210%;
-  width: 200%;
-  height: 200%;
-  opacity: 0;
-  transform: rotate(25deg);
-  
-  background: rgba(255, 255, 255, 0.13);
-  background: linear-gradient(
-    to right, 
-    rgba(255, 255, 255, 0.13) 0%,
-    rgba(255, 255, 255, 0.13) 77%,
-    rgba(255, 255, 255, 0.5) 92%,
-    rgba(255, 255, 255, 0.0) 100%
-  );
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(25deg);
+
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0.13) 0%,
+        rgba(255, 255, 255, 0.13) 77%,
+        rgba(255, 255, 255, 0.5) 92%,
+        rgba(255, 255, 255, 0.0) 100%
+    );
 }
 
 /* Hover state - trigger effect */
 
 .programy-img:hover:after {
-  opacity: 1;
-  top: -30%;
-  left: -30%;
-  transition-property: left, top, opacity;
-  transition-duration: 0.7s, 0.7s, 0.15s;
-  transition-timing-function: ease;
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
 }
 
 /* Active state */
 
- .programy-img:active:after {
-  opacity: 0;
+.programy-img:active:after {
+    opacity: 0;
 }
 
-
+/*------------------------------------------------------- */
 
 
 #rpfsection{
@@ -434,6 +407,21 @@ figure img{
     /*margin: 10px;*/
 
 
+}
+
+/*FOOTER */
+
+.footer-style{
+    width:100%;
+    height:50px;   /* Height of the footer */
+    background:#e74c3c;
+    text-align: center;
+     font-family: Raleway, sans-serif;
+    font-size: 1.6rem;
+    color: aliceblue;
+  line-height: 50px; 
+    vertical-align: middle;
+    
 }
 
 #cssmenu,
