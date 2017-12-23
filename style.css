@@ -122,7 +122,10 @@ background-image: url(images/Multistack2.jpg);
 
 #sectionrpf{
     background-image: url(images/SIEMENS_CNC_840DSL.jpg);
-    background-size: cover;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 75vh;
+    
 }
 
 
