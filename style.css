@@ -13,45 +13,14 @@
     text-rendering:optimizeLegibility;
 }
 
-/*
-.sc-logo img{
-float:left;
-margin-right: 20px;
-clear: left;
-display: inline;
-}
-.ic-logo img{
-float:right;
-margin-right: 20px;
-clear: left;
-display: inline;
-}
-.cw-logo img{
-float:left;
-margin-right: 20px;
-clear: left;
-display: inline;
-}
-.sc-logo h2{
-float: right;
-display: inline;
-}
-.ic-logo h2{
-float: left;
-display: inline;
-}
-.cw-logo h2{
-float: right;
-display: inline;
-position: relative
-}
 
-*/
 
-html{
+html
+{
     font-size: 62.5%;
 }
-header{
+header
+{
     margin:0;
     padding: 0;
 }
@@ -71,10 +40,7 @@ header{
     padding: 0;
     width: 100%;
     height: 100vh;
-
-    font-size: 1.6rem;
     border: 0 0;
-
     position:relative;
     overflow:hidden;
     background-size: cover;
@@ -82,50 +48,30 @@ header{
     background-position: center center;
     background-image: url(images/cnc-jobs-in-greece.gif);
 
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+
+     font-size: 1.7em;
     font-family: Raleway, sans-serif;
-}
-
-.aboutus-article h2{
-    font-size: 4.2rem;
-    text-align: center;
-    padding: 10px;
-    margin-top: 30px;
-    color: greenyellow
-
-}
-
-/*.aboutus-section{
-
-padding:  0 ;
-margin 0 0;
-border: 0 0;  
-height:100vh;
-width:auto;
-position:relative;
-overflow:hidden;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-background-image: url(images/Multistack2.jpg);
-
-}*/
-
-
-.RFP h1{
-    text-align: center;
-    font-size: 3em;
-    line-height: 150%;
-
-    font-family: 'Anton', sans-serif;
-    color: #e74c3c;
-}
-
-#sectionrpf{
-    background-image: url(images/SIEMENS_CNC_840DSL.jpg);
-    background-size: cover ;
-    background-repeat: no-repeat;
-    height: 75vh;
     
+}
+
+.contact-form-section
+{
+ /*   background-image: url(images/SIEMENS_CNC_840DSL.jpg);
+    background-size: cover ;*/
+
+box-sizing: border-box;
+    background-color:#8E80BE;
+ padding: 0;
+      font-family: Raleway, sans-serif;
+    font-size: 2rem;
+ padding-top: 20px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: gold;
 }
 
 
@@ -146,13 +92,6 @@ background-image: url(images/Multistack2.jpg);
     z-index: 1;
     padding: 7px;
 
-}
-.logosale img
-{
-    position: relative;
-    z-index: -1;
-    right: 5px;
-    top:0;
 }
 
 /*FLEX BOX DLA SEKSJI ABOUTUS*/
@@ -306,9 +245,9 @@ img {max-width:100%;}
     content: "";
     position: absolute;
     top: 110%;
-    left: -210%;
-    width: 200%;
-    height: 200%;
+    left: 210%;
+    width: 500%;
+    height: 500%;
     opacity: 0;
     transform: rotate(25deg);
 
@@ -374,24 +313,7 @@ img {max-width:100%;}
 
 
 
-.div2 h1{
 
-    padding-top: 2em;
-    font-size: 5em;
-    text-align: center;
-    color: #e74c3c;
-    line-height:150%;
-
-}
-.div2 h2{
-    padding-left: 2em;
-    padding-top: 1em;
-    font-size: 3em;
-    text-align: left;
-    color: #e74c3c;
-    line-height:150%;
-
-}
 figure{
     height: auto;
     width: 100%;
@@ -543,7 +465,6 @@ figure img{
 #cssmenu > ul > li > a:hover::before {
     background: #FADE4D;
 }
-/*
 #cssmenu.small-screen {
 width: 100%;
 }
@@ -611,4 +532,3 @@ background: #ffffff;
 #cssmenu.small-screen #menu-button.menu-opened:before {
 background: #dff2fa;
 }
-*/

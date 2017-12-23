@@ -102,7 +102,7 @@
 <h2>Tworzymy również grafiki symulacji maszynowych</h2>
 
 </article> -->
-            <span>Od wielu lat zajmujemy się kompleksowym wdrażaniem postprocessorów, gwarantujemy konkurencyjne ceny oraz błyskawieczne wdrożenie.<b>Wypełnij formularz w celu poznania ceny!!!</b> </span>
+            <span data-aos="fade-up">Od wielu lat zajmujemy się kompleksowym wdrażaniem postprocessorów, gwarantujemy konkurencyjne ceny oraz błyskawieczne wdrożenie.<b>Wypełnij formularz w celu poznania ceny!!!</b> </span>
             <div  class="flex-container">
 
                 <div  data-aos="fade-right"
@@ -170,21 +170,20 @@
 
 
 
-        <section id="sectionrpf">
+        <section class="contact-form-section">
 
  <link rel="stylesheet" href="style_footer.css">
            
            
-            <div style="width:100%; height:50%; text-align: center; padding-right: 15em; 
-                        padding-left: 15em;" id="offer"method="get" autocomplete="on" class="RFP">
+            <div id="offer"method="get" autocomplete="on">
 
                 <span>
-                    Skontaktuj się z nami, podamy Ci najlepszą cenę!!!
+                   Wypełnij poniższy formularz a my damy Ci najlepszą cene
                 </span>
                 <form id="contact" action="pdfGenerator/form.php" method="POST">
                     <p>
                         <!--<label> Nazwa firmy :</label>-->
-                        <input placeholder="Nazwa firmy" type="text" name="c_name">
+                        <input placeholder="Nazwa firmy / Imię Nazwisko" type="text" name="c_name">
                     </p>
                     <p>
                         <!-- <label> Email :</label>-->
@@ -204,6 +203,10 @@
 
                     <p>
                         <input placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
+                    </p>
+                    
+                      <p >
+                        <input style="height: 100px; vertical-align:top; line-height: 100px;" placeholder="Wiadomość:" type="text" name="wiadomosc">
                     </p>
 
                     <script>
@@ -243,9 +246,11 @@
                         }
                     </script>
 
+                  
+                   
                     <input type="file" name="file1" id="file1"><br>
-                    <input type="button" value="Upload File" onclick="uploadFile()">
-                    <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+                    <input  class="buton-wgraj" type="button" value="Wgraj plik" onclick="uploadFile()">
+                    <progress id="progressBar" value="0" max="100" ></progress>
                     <h3 id="status"></h3>
                     <p id="loaded_n_total"></p>
                     <button name="submit" type="submit" name="sendMail" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
@@ -253,29 +258,13 @@
 
 
                 </form>
-                <form id="upload_form" enctype="multipart/form-data" method="post">
+        <!--        <form id="upload_form" enctype="multipart/form-data" method="post">
                     <input type="file" name="file1" id="file1"><br>
                     <input type="button" value="Upload File" onclick="uploadFile()">
                     <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
                     <h3 id="status"></h3>
                     <p id="loaded_n_total"></p>
-                </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                </form>-->
 
             </div>
         </section>
@@ -315,41 +304,7 @@ alert('Please re-check the captcha');
 </div>-->
 
     <footer class="footer-style">
-        <!--<link rel="stylesheet" href="style_footer.css">
-
-<div class="container">  
-
-<form id="contact" action="mail.php" method="POST">
-<h4> Masz pytanie? Napisz!!!</h4>
-<fieldset>
-<input placeholder="Imię i nazwisko" type="text" tabindex="1" required autofocus>
-</fieldset>
-<fieldset>
-<input placeholder="Adres mailowy" type="email" tabindex="2" required>
-</fieldset>
-<fieldset>
-<input placeholder="Numer kontaktowy" type="tel" tabindex="3" required>
-</fieldset>
-
-<fieldset>
-<textarea placeholder="Wprowadź swoją wiadomość..." type="message" tabindex="5" required></textarea>
-</fieldset>
-<fieldset>
-
-</fieldset>
-</form>
-
-<button name="submit" type="submit" name="sendMail" value="oknoAlert" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
-<script>
-function oknoAlert() {
-alert('To jest okienko alert');
-}
-
-document.getElementById('confirm').addEventListener('click', function() {
-oknoConfirm()
-});
-</script>
-</div>-->
+        
         <span>site design / logo © 2017 jkd1992 </span>
     </footer>
 </html>
