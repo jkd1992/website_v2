@@ -45,6 +45,7 @@ header
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
+    opacity: 0.5;
   
 }
 
