@@ -24,6 +24,17 @@ header
     margin:0;
     padding: 0;
 }
+
+.video-header
+{
+    height:800px;
+  width:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+
+
 /*CSS DLA VIDEO Z YT*/
 .video-header iframe{
     padding: 0 0 0 0;
@@ -33,6 +44,8 @@ header
     background: url('images/bootstrap-grid-1170_03.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    position: absolute;
+  
 }
 
 .aboutus-section{
@@ -74,6 +87,11 @@ box-sizing: border-box;
     color: gold;
 }
 
+.aboutus-section a
+{
+    color: gold;
+    text-decoration: none;
+}
 
 
 .logo-menu img {
