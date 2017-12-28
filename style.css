@@ -27,31 +27,31 @@ header
 
 .video-header
 {
- height:600px;
-  width:100%;
-  position:relative;
+    height:600px;
+    width:100%;
+    position:relative;
 
 
 }
 
 .video-header .video-header-text{
     z-index: 1000;
-     position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4.6rem;
-     font-family: Raleway, sans-serif; 
-text-align: center;
- width: 100%;
+    font-family: Raleway, sans-serif; 
+    text-align: center;
+    width: 100%;
     text-transform: uppercase;
- /*   color: #e74c3c;*/
+    /*   color: #e74c3c;*/
     color:#34888c;
 
-    
-     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    
-   
+
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+
 }
 
 
@@ -68,10 +68,9 @@ text-align: center;
     background-repeat: no-repeat;
     position: absolute;
     opacity: 0.5;
-     
-        overflow:hidden;
-    
-    
+    overflow:hidden;
+
+
 }
 
 .aboutus-section{
@@ -86,27 +85,35 @@ text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(images/cnc-jobs-in-greece.gif);
-
-    text-align: center;
-    padding-top: 20px;
-    color: black;
-
-     font-size: 1.7em;
-    font-family: Raleway, sans-serif;
     
 }
 
+.aboutus-section-text 
+{
+    position:relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ /*   color: black;*/
+    color: #c8000a;
+    font-size: 3.2em;
+    font-family: Raleway, sans-serif;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+
 .contact-form-section
 {
- /*   background-image: url(images/SIEMENS_CNC_840DSL.jpg);
+    /*   background-image: url(images/SIEMENS_CNC_840DSL.jpg);
     background-size: cover ;*/
 
-box-sizing: border-box;
+    box-sizing: border-box;
     background-color:#8E80BE;
- padding: 0;
-      font-family: Raleway, sans-serif;
+    padding: 0;
+    font-family: Raleway, sans-serif;
     font-size: 2rem;
- padding-top: 20px;
+    padding-top: 20px;
     margin: 0;
     text-align: center;
     width: 100%;
@@ -133,7 +140,7 @@ box-sizing: border-box;
     text-align: center;
     border-radius: 50%;
     box-sizing: border-box;
-z-index: 1001;
+    z-index: 1001;
     padding: 7px;
 
 }
@@ -141,9 +148,9 @@ z-index: 1001;
 /*FLEX BOX DLA SEKSJI ABOUTUS*/
 .programy-img img
 {
-position: relative;
+    position: relative;
     vertical-align: middle;
-    
+
 }
 .aboutus-section .flex-container 
 {
@@ -221,7 +228,7 @@ position: relative;
     box-sizing: border-box;
     flex-grow:2;
     text-align: center;
-     height: 250px;
+    height: 250px;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
@@ -244,7 +251,7 @@ position: relative;
 
     background-size: cover;
     overflow: hidden;
-    
+
 }
 
 
@@ -259,7 +266,7 @@ position: relative;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-     height: 250px;
+    height: 250px;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
@@ -393,12 +400,12 @@ figure img{
     height:50px;   /* Height of the footer */
     background:#e74c3c;
     text-align: center;
-     font-family: Raleway, sans-serif;
+    font-family: Raleway, sans-serif;
     font-size: 1.6rem;
     color: aliceblue;
-  line-height: 50px; 
+    line-height: 50px; 
     vertical-align: middle;
-    
+
 }
 
 #cssmenu,
@@ -501,7 +508,7 @@ figure img{
     height: 100%;
     padding: 16px 20px;
     color: #dff2fa;
-    background: #FADE4D;
+    background: #f5e356;
     content: attr(data-title);
     -webkit-transition: background 0.3s;
     -moz-transition: background 0.3s;
@@ -519,69 +526,69 @@ figure img{
     background: #FADE4D;
 }
 #cssmenu.small-screen {
-width: 100%;
+    width: 100%;
 }
 #cssmenu.small-screen > ul,
 #cssmenu.small-screen.align-center > ul {
-width: 100%;
-text-align: left;
+    width: 100%;
+    text-align: left;
 }
 #cssmenu.small-screen > ul > li,
 #cssmenu.small-screen.align-center {
-float: none;
-display: block;
-border-top: 1px solid rgba(100, 100, 100, 0.1);
+    float: none;
+    display: block;
+    border-top: 1px solid rgba(100, 100, 100, 0.1);
 }
 #cssmenu.small-screen > ul > li:hover > a,
 #cssmenu.small-screen > ul > li > a:hover {
-color: #dff2fa;
--webkit-transform: none;
--moz-transform: none;
-transform: none;
--ms-transform: none;
+    color: #dff2fa;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    -ms-transform: none;
 }
 #cssmenu.small-screen > ul > li > a::before {
-display: none;
+    display: none;
 }
 #cssmenu.small-screen #menu-button {
-display: block;
-padding: 16px 20px;
-cursor: pointer;
-font-size: 14px;
-text-decoration: none;
-color: #ffffff;
-text-transform: uppercase;
-letter-spacing: 1px;
-background: #FADE4D;
+    display: block;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #FADE4D;
 }
 #cssmenu.small-screen #menu-button:after {
-content: "";
-position: absolute;
-right: 20px;
-top: 17px;
-display: block;
--webkit-box-sizing: content-box;
--moz-box-sizing: content-box;
-box-sizing: content-box;
-border-top: 2px solid #ffffff;
-border-bottom: 2px solid #ffffff;
-width: 22px;
-height: 3px;
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    width: 22px;
+    height: 3px;
 }
 #cssmenu.small-screen #menu-button.menu-opened:after {
-border-top: 2px solid #dff2fa;
-border-bottom: 2px solid #dff2fa;
+    border-top: 2px solid #dff2fa;
+    border-bottom: 2px solid #dff2fa;
 }
 #cssmenu.small-screen #menu-button:before {
-content: "";
-position: absolute;
-right: 20px;
-top: 27px;
-display: block;
-width: 22px;
-height: 2px;
-background: #ffffff;
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 27px;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #ffffff;
 }
 #cssmenu.small-screen #menu-button.menu-opened:before {
-background: #dff2fa;
+    background: #dff2fa;
 }
