@@ -40,13 +40,14 @@ header
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5.6rem;
+    font-size: 4.6rem;
      font-family: Raleway, sans-serif; 
 text-align: center;
  width: 100%;
     text-transform: uppercase;
  /*   color: #e74c3c;*/
-    color:black;
+    color:#34888c;
+
     
      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     
@@ -67,7 +68,9 @@ text-align: center;
     background-repeat: no-repeat;
     position: absolute;
     opacity: 0.5;
-      transform: scale(2); 
+    
+        overflow:hidden;
+    
     
 }
 
@@ -163,6 +166,10 @@ z-index: 1001;
 
 }
 
+
+
+
+
 .programy-img:nth-child(1) {
     -webkit-order: 0;
     -ms-flex-order: 0;
@@ -173,7 +180,7 @@ z-index: 1001;
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    height: 100%;
+    height: 250px;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
@@ -211,7 +218,7 @@ z-index: 1001;
     box-sizing: border-box;
     flex-grow:2;
     text-align: center;
-    height: 100%;
+  height: 250px;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
@@ -248,7 +255,7 @@ z-index: 1001;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-    height: 100%;
+    height: 250px;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
