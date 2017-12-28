@@ -92,8 +92,9 @@ header
 {
     position:relative;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+   /* margin-top: 50px;
+    margin-bottom: 50px;*/
+    margin: 50px 10px;
  /*   color: black;*/
     color: #c8000a;
     font-size: 3.2em;
