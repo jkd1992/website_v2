@@ -61,14 +61,14 @@ text-align: center;
 .video-header iframe{
     padding: 0 0 0 0;
     margin: 0 0 0 0 ;
-    width: 100%;
-    height: 100%;
+    width: 100% ;
+    height: 100% ;
     background: url('images/bootstrap-grid-1170_03.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     opacity: 0.5;
-    
+     
         overflow:hidden;
     
     
@@ -139,7 +139,12 @@ z-index: 1001;
 }
 
 /*FLEX BOX DLA SEKSJI ABOUTUS*/
-
+.programy-img img
+{
+position: relative;
+    vertical-align: middle;
+    
+}
 .aboutus-section .flex-container 
 {
 
@@ -165,8 +170,6 @@ z-index: 1001;
 
 
 }
-
-
 
 
 
@@ -218,7 +221,7 @@ z-index: 1001;
     box-sizing: border-box;
     flex-grow:2;
     text-align: center;
-  height: 250px;
+     height: 250px;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
@@ -235,12 +238,13 @@ z-index: 1001;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     text-align: center;
-    background-image: url(images/solidworkscam.jpg);
-    background-position: center 30%;
+    background-image: url(images/solidworkscam.jpg) ;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    text-align: center;
+
     background-size: cover;
     overflow: hidden;
+    
 }
 
 
@@ -255,7 +259,7 @@ z-index: 1001;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-    height: 250px;
+     height: 250px;
     width:45%;
     z-index: 1;
     border-bottom-left-radius: 5px;
