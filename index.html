@@ -83,10 +83,26 @@
              
              
 <!--              <script src="/js/noblackbars.js"></script>-->
-              
-             
+           
+                <div   class="video-header-text"><p><b>Solidny postprocessor w dobrej cenie</b></p>
+                <script>
+                    
+                    
+                    $(window).scroll(function(){
+    $(".video-header-text").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+
+/*win.scroll(function(){
+  scrollPosition = win.scrollTop();
+  scrollRatio = 1 - scrollPosition / 300;
+  $(".top").css("opacity", scrollRatio);
+*/
+
+                    </script>
                 
-                <div class="video-header-text"><p><b>Solidny postprocessor w dobrej cenie</b></p></div>
+                
+                
+                </div>
                 
                 
                 <iframe  src="https://www.youtube.com/embed/fbFeNkFPlMA?start=7&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allowfullscreen ></iframe>
@@ -98,6 +114,7 @@
 
         <script>
             AOS.init();
+            
         </script>
 
         <section  class="aboutus-section" id="aboutus">
