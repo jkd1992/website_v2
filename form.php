@@ -1,31 +1,70 @@
 <?php
-if (!empty($_POST['submit']))
-    $c_name =$_POST['c_name'];
-    $email =$_POST['email'];
+if (!empty($_POST['submit']));
+    
+    
+    
+$cname =$_POST['cname'];
+$email =$_POST['email'];
+$phone1=$_POST['phone1'];
 $machine=$_POST['machine'];
 $controler=$_POST['controler'];
-$controler=$_POST['controler'];
 $sterowaneosie=$_POST['sterowaneosie'];
+$wiadomosc=$_POST['wiadomosc'];
 
-require("fpdf.php");
+
+// attachment name
+
+$filename_header = "Zapytanie ofertowe: ".$cname;
+
+$data_header = date("F j, Y, g:i a");     
+
+
+
+/*
+$header1 = $data_header ." ".$c_name;
+*/
+
+require("pdfGenerator/fpdf.php");
 $pdf=new FPDF();
 $pdf->AddPage();
 $pdf->SetFont("Arial","B",16);
-$pdf->Cell(0,10,"Firma: ",1,1);
-$pdf->Cell(0,10,c_name,1,1);
-$pdf->Cell(50,10,"Nazwa maszyny: ",1,0);
-$pdf->Cell(50,10,$machine,1,1);
-$pdf->Cell(50,10,"Nazwa sterowania",1,0);
-$pdf->Cell(50,10,$controler,1,1);
-$pdf->Cell(50,10,"Ilosc osi:",1,0);
-$pdf->Cell(50,10,$sterowaneosie,1,0);
+
+
+   // Move to the right
+  /*  $pdf->Cell(300);*/
+    // Framed title
+    $pdf->Cell(190,10,$filename_header,1,0,'C');
+ $pdf->Ln(10);
+    $pdf->Cell(190,10,$data_header,1,0,'C');
+    // Line break
+   $pdf->Ln(20);
+
+
+
+
+$pdf->Cell(60,10,"Firma: ",1,0);
+$pdf->Cell(130,10,$cname,1,1);
+$pdf->Cell(60,10,"Telefon: ",1,0);
+$pdf->Cell(130,10,$phone1,1,1);
+$pdf->Cell(60,10,"Email: ",1,0);
+$pdf->Cell(130,10,$email,1,1);
+$pdf->Cell(60,10,"Nazwa maszyny: ",1,0);
+$pdf->Cell(130,10,$machine,1,1);
+$pdf->Cell(60,10,"Nazwa sterowania:",1,0);
+$pdf->Cell(130,10,$controler,1,1);
+$pdf->Cell(60,10,"Ilosc osi:",1,0);
+$pdf->Cell(130,10,$sterowaneosie,1,1);
+$pdf->Ln(20);
+$pdf->Cell(190,10,"Wiadomosc: ",1,0,'C');
+$pdf->Ln(10);
+$pdf->Cell(190,80,$wiadomosc,1,0);
 
 /*$pdf->output();*/
 
 
 
 // email stuff (change data below)
-$to = "jdziewulsky@gmail.com"; 
+$to = "cnc.postprocesory@gmail.com"; 
 $from = $email; 
 $subject = "Zapytanie ofertowe $c_name"; 
 $message = "<p>Zapytanie ofertowe.</p>";
@@ -37,7 +76,8 @@ $separator = md5(time());
 $eol = PHP_EOL;
 
 // attachment name
-$filename = "test.pdf";
+$dzisiaj = date("m.d.y"); 
+$filename = "Zapytanie ofertowe_".$dzisiaj."_.pdf";
 
 // encode data (puts attachment in proper format)
 $pdfdoc = $pdf->Output("", "S");

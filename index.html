@@ -13,6 +13,7 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <head>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <!-- jQuery library (served from Google) -->
@@ -199,6 +200,7 @@
         </div>
 
 
+                 
 
 
         <section class="contact-form-section">
@@ -209,12 +211,13 @@
             <div id="offer"method="get" autocomplete="on">
 
                 <span>
-                   Wypełnij poniższy formularz a my damy Ci najlepszą cene
+                    Wypełnij poniższy formularz a my damy Ci najlepszą cene <br>
+                    Wgraj przykładowy kod NC to pozwoli nam jescze przyspieszyć wdrożenie
                 </span>
-                <form id="contact" action="pdfGenerator/form.php" method="POST">
+                <form  onsubmit="return checkform(this)" id="contact" action="form.php " method="POST">
                     <p>
                         <!--<label> Nazwa firmy :</label>-->
-                        <input placeholder="Nazwa firmy / Imię Nazwisko" type="text" name="c_name">
+                        <input placeholder="Nazwa firmy / Imię Nazwisko" type="text" name="cname">
                     </p>
                     <p>
                         <!-- <label> Email :</label>-->
@@ -284,6 +287,44 @@
                     <progress id="progressBar" value="0" max="100" ></progress>
                     <h3 id="status"></h3>
                     <p id="loaded_n_total"></p>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+                       
+                    <!-- START CAPTCHA -->
+<br>
+<div class="capbox">
+
+<div id="CaptchaDiv"></div>
+
+<div class="capbox-inner">
+Type the above number:<br>
+
+<input type="hidden" id="txtCaptcha">
+<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+
+</div>
+</div>
+<br><br>
+<!-- END CAPTCHA -->
+                    
+              
+                    
+                    <!--CAPTCHA JS SCRIPT-->
+                <script src="/js/captcha.js"></script>
+                    
+                  
+                   
+                    
+                    
+                    
                     <button name="submit" type="submit" name="sendMail" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
 
 
