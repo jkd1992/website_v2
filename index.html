@@ -81,32 +81,27 @@
             <div class="video-header" id="videoWithJs" >
                 <!-- <div id="videoWithNoJs" class="videoWrapper">
 <script src="/js/videoWithNoJs/videoWithNoJs.js"> </script>-->
-             
-             
-<!--              <script src="/js/noblackbars.js"></script>-->
-           
-                <div   class="video-header-text"><p><b>Solidny postprocessor w dobrej cenie</b></p>
-                <script>
-                    
-                    
-                    $(window).scroll(function(){
-    $(".video-header-text").css("opacity", 1 - $(window).scrollTop() / 250);
-  });
 
-/*win.scroll(function(){
-  scrollPosition = win.scrollTop();
-  scrollRatio = 1 - scrollPosition / 300;
-  $(".top").css("opacity", scrollRatio);
-*/
+
+                <!--              <script src="/js/noblackbars.js"></script>-->
+
+                <div   class="video-header-text"><p><b>Solidny postprocessor w dobrej cenie</b></p>
+                    <script>
+
+
+                        $(window).scroll(function(){
+                            $(".video-header-text").css("opacity", 1 - $(window).scrollTop() / 250);
+                        });
+
 
                     </script>
-                
-                
-                
+
+
+
                 </div>
-                
-                
-                <iframe  src="https://www.youtube.com/embed/fbFeNkFPlMA?start=7&autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allowfullscreen ></iframe>
+
+
+                <!--<iframe  src="https://www.youtube.com/embed/fbFeNkFPlMA?start=20&end=160$autoplay=0&mute=1&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allowfullscreen ></iframe>-->
             </div>
 
         </section>
@@ -115,7 +110,7 @@
 
         <script>
             AOS.init();
-            
+
         </script>
 
         <section  class="aboutus-section" id="aboutus">
@@ -129,12 +124,12 @@
 <h2>Tworzymy również grafiki symulacji maszynowych</h2>
 
 </article> -->
-           <div class="aboutus-section-text">
-            <span data-aos="fade-up"> <b>Od wielu lat zajmujemy się kompleksowym wdrażaniem postprocessorów, gwarantujemy konkurencyjne ceny oraz błyskawieczne wdrożenie<br /> 
-               <a href="#contact">Wypełnij formularz w celu poznania ceny!!!</a></b></span>
-                </div>
-                
-                
+            <div class="aboutus-section-text">
+                <span data-aos="fade-up"> <b>Od wielu lat zajmujemy się kompleksowym wdrażaniem postprocessorów, gwarantujemy konkurencyjne ceny oraz błyskawieczne wdrożenie<br /> 
+                    <a href="#contact">Wypełnij formularz w celu poznania ceny!!!</a></b></span>
+            </div>
+
+
             <div  class="flex-container">
 
                 <div  data-aos="fade-right"
@@ -193,10 +188,10 @@
             <ul class="bxslider">
                 <!--  <h1 style="text-align: center; z-index: 5;">Nasze wdrożenia</h1>-->
                 <div><center> <li ><img style=" text-align: center;"src="/images/clx450.jpg" /></li></center> 
-                
+
                 </div>
                 <div>
-                <center> <li><img style=" text-align: center;"src="/images/millturn1.jpg" /></li></center> 
+                    <center> <li><img style=" text-align: center;"src="/images/millturn1.jpg" /></li></center> 
                 </div>
 
             </ul>  
@@ -204,14 +199,14 @@
         </div>
 
 
-                 
+
 
 
         <section class="contact-form-section">
 
- <link rel="stylesheet" href="style_footer.css">
-           
-           
+            <link rel="stylesheet" href="style_footer.css">
+
+
             <div id="offer"method="get" autocomplete="on">
 
                 <span>
@@ -242,10 +237,30 @@
                     <p>
                         <input placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
                     </p>
-                    
-                      <p >
-                        <input style="height: 100px; vertical-align:top; line-height: 100px;" placeholder="Wiadomość:" type="text" name="wiadomosc">
+
+
+                    <p>
+                        <textarea name="wiadomosc" class="form-textarea" rows="4" cols="50" >Masz dodatkowe pytanie? Napisz, chętnie na nie odpowiemy!!!</textarea>
                     </p>
+
+                  <!--  FUNKCJA NA ZNIKANIE TEKSTI W SEKCJI FORM-TEXTAREA PO KLIKNIĘCIU KUSOREM-->
+                    <script>
+                        $(".form-textarea")
+                            .focus(function() {
+                            if (this.value === this.defaultValue) {
+                                this.value = '';
+                            }
+                        })
+                            .blur(function() {
+                            if (this.value === '') {
+                                this.value = this.defaultValue;
+                            }
+                        });
+                    </script>
+
+
+
+
 
                     <script>
                         /* Script written by Adam Khoury @ DevelopPHP.com */
@@ -284,63 +299,63 @@
                         }
                     </script>
 
-                  
-                   
+
+
                     <input type="file" name="file1" id="file1"><br>
                     <input  class="buton-wgraj" type="button" value="Wgraj plik" onclick="uploadFile()">
                     <progress id="progressBar" value="0" max="100" ></progress>
                     <h3 id="status"></h3>
                     <p id="loaded_n_total"></p>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
 
-                       
+
+
+
+
+
+
+
+
+
+
                     <!-- START CAPTCHA -->
-<br>
-<div class="capbox">
+                    <br>
+                    <div class="capbox">
 
-<div id="CaptchaDiv"></div>
+                        <div id="CaptchaDiv"></div>
 
-<div class="capbox-inner">
-Type the above number:<br>
+                        <div class="capbox-inner">
+                            Type the above number:<br>
 
-<input type="hidden" id="txtCaptcha">
-<input type="text" name="CaptchaInput" id="CaptchaInput" size="15" style="width: 30%;"><br>
+                            <input type="hidden" id="txtCaptcha">
+                            <input type="text" name="CaptchaInput" id="CaptchaInput" size="15" style="width: 30%;"><br>
 
-</div>
-</div>
-<br><br>
-<!-- END CAPTCHA -->
-                    
-              
-                    
+                        </div>
+                    </div>
+                    <br><br>
+                    <!-- END CAPTCHA -->
+
+
+
                     <!--CAPTCHA JS SCRIPT-->
-                <script src="/js/captcha.js"></script>
-                    
-                  
-                   
-                    
-                    
-                    
+                    <script src="/js/captcha.js"></script>
+
+
+
+
+
+
                     <button name="submit" type="submit" name="sendMail" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
 
 
 
                 </form>
-        <!--        <form id="upload_form" enctype="multipart/form-data" method="post">
-                    <input type="file" name="file1" id="file1"><br>
-                    <input type="button" value="Upload File" onclick="uploadFile()">
-                    <progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
-                    <h3 id="status"></h3>
-                    <p id="loaded_n_total"></p>
-                </form>-->
+                <!--        <form id="upload_form" enctype="multipart/form-data" method="post">
+<input type="file" name="file1" id="file1"><br>
+<input type="button" value="Upload File" onclick="uploadFile()">
+<progress id="progressBar" value="0" max="100" style="width:300px;"></progress>
+<h3 id="status"></h3>
+<p id="loaded_n_total"></p>
+</form>-->
 
             </div>
         </section>
@@ -380,7 +395,7 @@ alert('Please re-check the captcha');
 </div>-->
 
     <footer class="footer-style">
-        
+
         <span>site design / logo © 2017 jkd1992 </span>
     </footer>
 </html>
