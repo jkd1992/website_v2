@@ -6,11 +6,11 @@ function checkform(theform){
 var why = "";
 
 if(theform.CaptchaInput.value == ""){
-why += "- Proszę wprowadzić kod CAPTCHA.\n";
+why += "- Please Enter CAPTCHA Code.\n";
 }
 if(theform.CaptchaInput.value != ""){
 if(ValidCaptcha(theform.CaptchaInput.value) == false){
-why += "- Kod CAPTCHA jest niepoprawny.\n";
+why += "- The CAPTCHA Code Does Not Match.\n";
 }
 }
 if(why != ""){

@@ -35,7 +35,6 @@ header
 
 }
 
-
 .video-header .video-header-text{
     z-index: 1000;
     position: absolute;
@@ -46,7 +45,7 @@ header
     font-family: Raleway, sans-serif; 
     text-align: center;
     width: 100%;
-    text-transform: uppercase;
+   /* text-transform: uppercase;*/
     /*   color: #e74c3c;*/
     color:#2d4262;
 
