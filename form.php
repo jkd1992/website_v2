@@ -109,6 +109,26 @@ $body .= $attachment.$eol;
 $body .= "--".$separator."--";
 
 // send message
-mail($to, $subject, $body, $headers);
+if(mail($to, $subject, $body, $headers))
+   {
+/*       echo "Wiadomość została wysłana, dziękujemy!!!!";
+  
+       echo "
+            <script type=\"text/javascript\">
+            setTimeout(function() {
+  
+}, 2000);
+            </script>
+        ";*/
+    
+    $message2 = "Wiadomość została wysłana, dziękujemy!!!!";
+echo "<script type='text/javascript'>alert('$message2');</script>";
+    
+   /*header("location:javascript://history.go(-1)");   */
+/*setTimeout(function() {
+    header("location:javascript://history.go(-1)");
+}, 2000);*/
+    
+   }
 
 ?>
