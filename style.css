@@ -116,14 +116,13 @@ header
 {
     /*   background-image: url(images/SIEMENS_CNC_840DSL.jpg);
     background-size: cover ;*/
-
-    box-sizing: border-box;
+position:relative;
+box-sizing: border-box;
     background-color:#8E80BE;
     padding: 0;
+    margin:0;
     font-family: Raleway, sans-serif;
     font-size: 2rem;
-    padding-top: 20px;
-    margin: 0;
     text-align: center;
     width: 100%;
     color: gold;
@@ -400,6 +399,15 @@ figure{
 
 
 }
+
+@media only screen and (max-width: 850px)
+{
+    .logo-menu
+    {
+        display: none;
+    }
+}
+
 figure img{
 
     z-index: 1;
@@ -551,6 +559,12 @@ figure img{
 #cssmenu > ul > li > a:hover::before {
     background: #FADE4D;
 }
+
+
+
+
+
+/*
 #cssmenu.small-screen {
     width: 100%;
 }
@@ -618,5 +632,6 @@ figure img{
 #cssmenu.small-screen #menu-button.menu-opened:before {
     background: #dff2fa;
 }
+*/
 
 
