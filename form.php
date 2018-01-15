@@ -114,16 +114,18 @@ if(mail($to, $subject, $body, $headers))
 
 $str = iconv("utf-8", "iso-8859-2", $str);
     
-$message2 = "Wiadomość została wysłana, dziękujemy!!!!",$str;
+$message2 = "Wiadomosc zostala wyslana, dziekujemy!!!!";
     //wykonanie skryptu w php za pomoca atrybutu echo
 echo "<script type='text/javascript'>alert('$message2');</script>";
-echo "<script type='text/javascript'>setTimeout(myFunction, 3000);</script>";
     
     
-    //cofnięcie się do strony index.html
-header("location:javascript://history.go(-1)");   
+    
+ 
+    //cofnięcie się do strony index.html #offer po upływie 1500ms
+/*
+header("location:javascript://history.go(-1)");  */ 
 
-    
    }
-
+$loc = "location.href = 'http://cnc-post.pl/index.html#offer'";
+  echo "<script type='text/javascript'>setTimeout($loc,1500);</script>";
 ?>
