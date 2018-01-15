@@ -111,23 +111,17 @@ $body .= "--".$separator."--";
 // send message
 if(mail($to, $subject, $body, $headers))
    {
-/*       echo "Wiadomość została wysłana, dziękujemy!!!!";
-  
-       echo "
-            <script type=\"text/javascript\">
-            setTimeout(function() {
-  
-}, 2000);
-            </script>
-        ";*/
-    
-    $message2 = "Wiadomość została wysłana, dziękujemy!!!!";
+
+$str = iconv("utf-8", "iso-8859-2", $str);
+$message2 = "Wiadomość została wysłana, dziękujemy!!!!",$str;
+    //wykonanie skryptu w php za pomoca atrybutu echo
 echo "<script type='text/javascript'>alert('$message2');</script>";
+echo "<script type='text/javascript'>setTimeout(myFunction, 3000);</script>";
     
-   /*header("location:javascript://history.go(-1)");   */
-/*setTimeout(function() {
-    header("location:javascript://history.go(-1)");
-}, 2000);*/
+    
+    //cofnięcie się do strony index.html
+header("location:javascript://history.go(-1)");   
+
     
    }
 
