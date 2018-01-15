@@ -31,8 +31,6 @@ header
     height:600px;
     width:100%;
     position:relative;
-
-
 }
 
 .video-header .video-header-text{
@@ -45,7 +43,7 @@ header
     font-family: Raleway, sans-serif; 
     text-align: center;
     width: 100%;
-   /* text-transform: uppercase;*/
+    text-transform: uppercase;
     /*   color: #e74c3c;*/
     color:#2d4262;
 

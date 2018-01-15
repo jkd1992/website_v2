@@ -221,36 +221,35 @@
                 <form  onsubmit="return checkform(this)" id="contact" action="form.php " method="POST">
                     <p>
                         <!--<label> Nazwa firmy :</label>-->
-                        <input placeholder="Nazwa firmy / Imię Nazwisko" type="text" name="cname">
+                        <input  placeholder="Nazwa firmy / Imię Nazwisko" type="text" name="cname">
                     </p>
                     <p>
                         <!-- <label> Email :</label>-->
                         <input placeholder="Email" type="text" name="email">
                     </p>
                     <p>
-
-                        <input placeholder="Numer kontaktowy" type="text" name="phone1">
+                        <input  placeholder="Numer kontaktowy" type="text" name="phone1">
                     </p>
                     <p>
-
-                        <input placeholder="Nazwa maszyny (np. DOOSAN DNM 500)" type="text" name="machine">
+                        <input  placeholder="Nazwa maszyny (np. DOOSAN DNM 500)" type="text" name="machine">
                     </p>
                     <p>
-                        <input placeholder="Sterowanie maszyny (np. Sinumerik 840 D)" type="text" name="controler">
+                        <input  placeholder="Sterowanie maszyny (np. Sinumerik 840 D)" type="text" name="controler">
                     </p>
 
                     <p>
-                        <input placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
+                        <input  placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
                     </p>
-
 
                     <p>
                         <textarea name="wiadomosc" class="form-textarea" rows="4" cols="50" >Masz dodatkowe pytanie? Napisz, chętnie na nie odpowiemy!!!</textarea>
                     </p>
 
-                  <!--  FUNKCJA NA ZNIKANIE TEKSTI W SEKCJI FORM-TEXTAREA PO KLIKNIĘCIU KUSOREM-->
+                  <!--  FUNKCJA NA ZNIKANIE TEKSTU W SEKCJI FORM-TEXTAREA PO KLIKNIĘCIU KUSOREM-->
                     <script>
+                
                         $(".form-textarea")
+                       
                             .focus(function() {
                             if (this.value === this.defaultValue) {
                                 this.value = '';
@@ -262,10 +261,6 @@
                             }
                         });
                     </script>
-
-
-
-
 
                     <script>
                         /* Script written by Adam Khoury @ DevelopPHP.com */

@@ -113,6 +113,7 @@ if(mail($to, $subject, $body, $headers))
    {
 
 $str = iconv("utf-8", "iso-8859-2", $str);
+    
 $message2 = "Wiadomość została wysłana, dziękujemy!!!!",$str;
     //wykonanie skryptu w php za pomoca atrybutu echo
 echo "<script type='text/javascript'>alert('$message2');</script>";
