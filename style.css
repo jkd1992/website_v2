@@ -115,9 +115,7 @@ header
 {
     /*   background-image: url(images/SIEMENS_CNC_840DSL.jpg);
     background-size: cover ;*/
-position:relative;
-box-sizing: border-box;
-    background-color:#8E80BE;
+
     padding: 0;
     margin:0;
     font-family: Raleway, sans-serif;
@@ -424,6 +422,7 @@ figure img{
 {
     font-family: Raleway, sans-serif;
     font-size: 1.6rem;
+    color:#888;
     
 }
 /*FOOTER */

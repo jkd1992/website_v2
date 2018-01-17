@@ -207,20 +207,24 @@
 
 
 
-        <section class="contact-form-section">
+        <section >
 
             <link rel="stylesheet" href="style_footer.css">
 
 
             <div id="offer" method="get" autocomplete="on">
 
-                <span>
+                
+                <form  onsubmit="return checkform(this)" id="contact" action="form.php " method="POST">
+            
+                   <div data-aos="fade-left">
+                       
+                        <span class="form-text">
                     Wypełnij poniższy formularz a my damy Ci najlepszą cene <br>
                     Wgraj przykładowy kod NC to pozwoli nam jescze przyspieszyć wdrożenie
                    
                 </span>
-                <form  onsubmit="return checkform(this)" id="contact" action="form.php " method="POST">
-            
+                   </div>
            
                     
                     <p>
@@ -242,9 +246,10 @@
                     </p>
 
                     <p>
-                        <input  placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
+                        <input class="form-textarea" placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
                     </p>
 
+                   
                     <p>
                         <textarea name="wiadomosc" class="form-textarea" rows="4" cols="50" >Masz dodatkowe pytanie? Napisz, chętnie odpowiemy!!!</textarea>
                     </p>
@@ -265,7 +270,25 @@
                             }
                         });
                     </script>
-
+                    
+                    
+                     <div data-aos="fade-right">
+                       
+                        <span>
+                    Jeśli posiadasz to prześlij nam swój przykładowy NC kod!!!
+                   
+                </span>
+                    
+                    </div>
+                    
+    
+                 
+                 
+                 
+                 
+                 
+                   
+             
                     <script>
                         /* Script written by Adam Khoury @ DevelopPHP.com */
                         /* Video Tutorial: http://www.youtube.com/watch?v=EraNFJiY0Eg */
@@ -286,25 +309,24 @@
                             ajax.send(formdata);
                         }
                         function progressHandler(event){
-                            _("loaded_n_total").innerHTML = "Uploaded "+event.loaded+" bytes of "+event.total;
+                            _("loaded_n_total").innerHTML = "Wgrano "+event.loaded+" bytes z "+event.total;
                             var percent = (event.loaded / event.total) * 100;
                             _("progressBar").value = Math.round(percent);
-                            _("status").innerHTML = Math.round(percent)+"% uploaded... please wait";
+                            _("status").innerHTML = Math.round(percent)+"% załadowano... proszę czekać";
                         }
                         function completeHandler(event){
                             _("status").innerHTML = event.target.responseText;
                             _("progressBar").value = 0;
                         }
                         function errorHandler(event){
-                            _("status").innerHTML = "Upload Failed";
+                            _("status").innerHTML = "Błąd wgrywania";
                         }
                         function abortHandler(event){
-                            _("status").innerHTML = "Upload Aborted";
+                            _("status").innerHTML = "Wgrywanie przerwane";
                         }
                     </script>
 
-
-
+                   
                     <input type="file" name="file1" id="file1"><br>
                     <input  class="buton-wgraj" type="button" value="Wgraj plik" onclick="uploadFile()">
                     <progress id="progressBar" value="0" max="100" ></progress>
@@ -328,7 +350,7 @@
                         <div id="CaptchaDiv"></div>
 
                         <div class="capbox-inner">
-                            Type the above number:<br>
+                            Wprowadź kod zabezpieczający:<br>
 
                             <input type="hidden" id="txtCaptcha">
                             <input type="text" name="CaptchaInput" id="CaptchaInput" size="15" style="width: 30%;"><br>
