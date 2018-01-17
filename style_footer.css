@@ -36,7 +36,11 @@
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
-    height: 50px;
+    height: 80px;
+     width: 250px;
+vertical-align: middle;
+    line-height: 30px;
+      
 	}
 
 #CaptchaDiv {
@@ -49,13 +53,22 @@
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 height: 50px;
+    width: 250px;
+margin: 5px auto 0px auto;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */     
 
 	}
 
-#CaptchaInput { margin: 1px 0px 1px 0px; width: 135px; }
+#CaptchaInput { margin: 1px 0px 1px 0px; min-width: 135px; }
 
 #progressBar{
-   width:60%; 
+   width:70%; 
 line-height: 12px;
                    
 }
@@ -68,7 +81,10 @@ line-height: 12px;
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans",  font-family: Raleway, sans-serif;
+ 
 }
+
+
 
 #contact {
 	background:#5c821a;
@@ -111,7 +127,7 @@ fieldset {
 
 #contact button[type="submit"] {
 	cursor:pointer;
-	width:100%;
+	width:80%;
 	border:none;
 	background:#4974CD;
 	color:#FFF;
@@ -123,7 +139,7 @@ fieldset {
 }
 #file1{
 cursor:pointer;
-	width:50%;
+	width:80%;
 	border:none;
 	background:#4974CD;
 	color:#FFF;
