@@ -397,13 +397,7 @@ figure{
 
 }
 
-@media only screen and (max-width: 850px)
-{
-    .logo-menu
-    {
-        display: none;
-    }
-}
+
 
 figure img{
 
@@ -558,11 +552,11 @@ figure img{
     background: #FADE4D;
 }
 
-
-
-
-
 /*
+@media only screen and (max-width: 900px)
+
+{
+
 #cssmenu.small-screen {
     width: 100%;
 }
@@ -630,6 +624,25 @@ figure img{
 #cssmenu.small-screen #menu-button.menu-opened:before {
     background: #dff2fa;
 }
+}
 */
-
-
+@media only screen and (max-width: 900px)
+{
+    
+    #cssmenu
+    {
+        color: black;
+        position: relative;
+    }
+    
+    
+    
+    .logo-menu
+    {
+        display: none;
+    }
+    
+ 
+    
+    
+}
