@@ -59,7 +59,7 @@ header
 /*CSS DLA VIDEO Z YT*/
 .video-header iframe{
 
-    background: url('images/bootstrap-grid-1170_03.jpg');
+    background: url('images/imachining_opt.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -626,13 +626,32 @@ figure img{
 }
 }
 */
+/*
 @media only screen and (max-width: 900px)
 {
     
-    #cssmenu
+#cssmenu > ul > li > a 
     {
-        color: black;
-        position: relative;
+   
+
+    margin-left: -57.6px;  halve the width of the image 
+    color: black;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #e74c3c;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
     }
     
     
@@ -640,9 +659,11 @@ figure img{
     .logo-menu
     {
         display: none;
+        
     }
     
  
     
     
 }
+*/
