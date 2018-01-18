@@ -28,7 +28,7 @@
 	}*/
 
 .capbox-inner {
-	font: bold 11px arial, sans-serif;
+	font: bold 1.2rem Raleway, sans-serif;
 	color: #000000;
 	background-color: #DBF3BA;
 	margin: 5px auto 0px auto;
@@ -44,7 +44,8 @@ vertical-align: middle;
 	}
 
 #CaptchaDiv {
-	font: bold 17px verdana, arial, sans-serif;
+	font: bold 3rem Raleway, sans-serif;
+    /*   font-family: Raleway, sans-serif;*/
 	font-style: italic;
 	color: #000000;
 	background-color: #FFFFFF;
@@ -120,6 +121,7 @@ font-size: 3rem;
 	background:#FFF;
 	margin:0 0 5px;
 	padding:10px;
+    border-radius: 0.5em;
 }
 
 #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {

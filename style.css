@@ -101,15 +101,15 @@ header
     text-align: center;
    /* margin-top: 50px;
     margin-bottom: 50px;*/
-    margin: 50px 25px;
+    margin: 25px 20px;
  /*   color: black;*/
     color: #2d4262;
     font-size: 3.6em;
     font-family: Raleway, sans-serif;
     text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
 
+  
 }
-
 
 .contact-form-section
 {
