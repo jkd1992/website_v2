@@ -76,9 +76,9 @@ $pdf->Cell(130,10,$sterowaneosie,1,1);
 $pdf->Ln(20);
 $pdf->Cell(190,10,"Wiadomość: ",1,0,'C');
 $pdf->Ln(10);
-$pdf->Cell(190,80,$wiadomosc,1,0);
+/*zawijanie tekstu do kolejnego wiersza*/
+$pdf->MultiCell(0, 6, $wiadomosc,1, 'J',0);
 
-/*$pdf->output();*/
 
 
 
