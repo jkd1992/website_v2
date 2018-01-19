@@ -1,8 +1,10 @@
 <?php
+
+
 if (!empty($_POST['submit']));
-    
-    
-    
+
+
+
 $cname =$_POST['cname'];
 $email =$_POST['email'];
 $phone1=$_POST['phone1'];
@@ -23,24 +25,41 @@ $data_header = date("F j, Y, g:i a");
 /*
 $header1 = $data_header ." ".$c_name;
 */
+/*
+define('FPDF_FONTPATH','pdfGenerator/font/unifont');  //definiuje katalog z czcionkami komponentu
+*/
 
-require("pdfGenerator/fpdf.php");
-$pdf=new FPDF();
+/*require("pdfGenerator/fpdf.php");*/
+require("pdfGenerator/tfpdf.php");
+$pdf=new tFPDF();
+/*DODANIE CZCIONKI OBSLUGUJACEJ POLSKIE ZNAKI*/
 $pdf->AddPage();
-$pdf->SetFont("Arial","B",16);
+/*
+$pdf->AddFont('arial','','arial.php');
+
+$pdf->SetFont('arial','',16);
+
+*/
+// Add a Unicode font (uses UTF-8)
+$pdf->AddFont('DejaVu','','DejaVuSansCondensed.ttf',true);
+$pdf->SetFont('DejaVu','',16);
+/*
+
+$pdf->AddPage();
+$pdf->SetFont('Calligrapher','',35);
+*/
 
 
-   // Move to the right
-  /*  $pdf->Cell(300);*/
-    // Framed title
-    $pdf->Cell(190,10,$filename_header,1,0,'C');
- $pdf->Ln(10);
-    $pdf->Cell(190,10,$data_header,1,0,'C');
-    // Line break
-   $pdf->Ln(20);
 
 
-
+// Move to the right
+/*  $pdf->Cell(300);*/
+// Framed title
+$pdf->Cell(190,10,$filename_header,1,0,'C');
+$pdf->Ln(10);
+$pdf->Cell(190,10,$data_header,1,0,'C');
+// Line break
+$pdf->Ln(20);
 
 $pdf->Cell(60,10,"Firma: ",1,0);
 $pdf->Cell(130,10,$cname,1,1);
@@ -52,10 +71,10 @@ $pdf->Cell(60,10,"Nazwa maszyny: ",1,0);
 $pdf->Cell(130,10,$machine,1,1);
 $pdf->Cell(60,10,"Nazwa sterowania:",1,0);
 $pdf->Cell(130,10,$controler,1,1);
-$pdf->Cell(60,10,"Ilosc osi:",1,0);
+$pdf->Cell(60,10,"Ilość osi:",1,0);
 $pdf->Cell(130,10,$sterowaneosie,1,1);
 $pdf->Ln(20);
-$pdf->Cell(190,10,"Wiadomosc: ",1,0,'C');
+$pdf->Cell(190,10,"Wiadomość: ",1,0,'C');
 $pdf->Ln(10);
 $pdf->Cell(190,80,$wiadomosc,1,0);
 
@@ -110,22 +129,23 @@ $body .= "--".$separator."--";
 
 // send message
 if(mail($to, $subject, $body, $headers))
-   {
+{
 
-$str = iconv("utf-8", "iso-8859-2", $str);
-    
-$message2 = "Wiadomosc zostala wyslana, dziekujemy!!!!";
+
+    $message2 = iconv("utf-8", "iso-8859-2", "Wiadomość została wysłana, dziękujemy!!!!");
+
+    /*$message2 = "Wiadomość została wysłana, dziękujemy!!!!";*/
     //wykonanie skryptu w php za pomoca atrybutu echo
-echo "<script type='text/javascript'>alert('$message2');</script>";
-    
-    
-    
- 
+    echo "<script type='text/javascript'>alert('$message2');</script>";
+
+
+
+
     //cofnięcie się do strony index.html #offer po upływie 1500ms
-/*
+    /*
 header("location:javascript://history.go(-1)");  */ 
 
-   }
+}
 $loc = "location.href = 'http://cnc-post.pl/index.html#offer'";
-  echo "<script type='text/javascript'>setTimeout($loc,1500);</script>";
+echo "<script type='text/javascript'>setTimeout($loc,1500);</script>";
 ?>

@@ -6,7 +6,7 @@
 * Date:    2015-12-20                                                          *
 * Author:  Olivier PLATHEY                                                     *
 *******************************************************************************/
-
+header('Content-Type: text/html; charset=utf-8');
 define('FPDF_VERSION','1.81');
 
 class FPDF
@@ -73,6 +73,11 @@ protected $PDFVersion;         // PDF version number
 
 function __construct($orientation='P', $unit='mm', $size='A4')
 {
+    
+    
+    
+/*    C:\Windows\FontsC:\Windows\Fonts\arial*/
+    
 	// Some checks
 	$this->_dochecks();
 	// Initialization of properties
