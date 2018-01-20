@@ -16,19 +16,19 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <head>
+       
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112663624-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112663624-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+  gtag('config', 'UA-112663624-1');
+</script>
 
-            gtag('config', 'UA-112663624-1');
-        </script>
-
-
-
+       
+       
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -204,7 +204,7 @@
             <ul class="bxslider">
                 <!--  <h1 style="text-align: center; z-index: 5;">Nasze wdrożenia</h1>-->
 
-
+              
 
                 <center> <li><img style=" text-align: center;"src="/images/clx450.jpg" /></li></center> 
                 <center> <li><img style=" text-align: center;"src="/images/imachining_opt.jpg" /></li></center> 
@@ -226,19 +226,19 @@
 
             <div id="offer" method="get" autocomplete="on">
 
-
+                
                 <form  onsubmit="return checkform(this)" id="contact" action="form.php " method="POST">
-
-                    <div data-aos="fade-left">
-
+            
+                   <div data-aos="fade-left">
+                       
                         <span class="form-text">
-                            Wypełnij poniższy formularz a my damy Ci najlepszą cenę <br>
-                            Wgraj przykładowy kod NC to pozwoli nam przyspieszyć wdrożenie
-
-                        </span>
-                    </div>
-
-
+                    Wypełnij poniższy formularz a my damy Ci najlepszą cenę <br>
+                    Wgraj przykładowy kod NC to pozwoli nam przyspieszyć wdrożenie
+                   
+                </span>
+                   </div>
+           
+                    
                     <p>
                         <!--<label> Nazwa firmy :</label>-->
                         <input  placeholder="Nazwa firmy / Imię Nazwisko" type="text" name="cname">
@@ -258,25 +258,19 @@
                     </p>
 
                     <p>
-                        <input  placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
-                    </p>
-                    <p>
-                       
-                       
-                       
-                
-                        <input placeholder="Oprogramowanie CAM (SolidCAM/CAMWorks)" type="text" name="oprogramowanie">
+                        <input class="form-textarea" placeholder="Sterowane osie (XYZ/XYZA/XYZAC...)" type="text" name="sterowaneosie">
                     </p>
 
+                   
                     <p>
                         <textarea name="wiadomosc" class="form-textarea" rows="4" cols="50" >Masz dodatkowe pytanie? Napisz, chętnie odpowiemy!!!</textarea>
                     </p>
 
-                    <!--  FUNKCJA NA ZNIKANIE TEKSTU W SEKCJI FORM-TEXTAREA PO KLIKNIĘCIU KUSOREM-->
+                  <!--  FUNKCJA NA ZNIKANIE TEKSTU W SEKCJI FORM-TEXTAREA PO KLIKNIĘCIU KUSOREM-->
                     <script>
-
+                
                         $(".form-textarea")
-
+                       
                             .focus(function() {
                             if (this.value === this.defaultValue) {
                                 this.value = '';
@@ -288,25 +282,25 @@
                             }
                         });
                     </script>
-
-
-                    <div data-aos="fade-right">
-
+                    
+                    
+                     <div data-aos="fade-right">
+                       
                         <span>
-                            Jeśli posiadasz to prześlij nam swój przykładowy NC kod!!!
-
-                        </span>
-
+                    Jeśli posiadasz to prześlij nam swój przykładowy NC kod!!!
+                   
+                </span>
+                    
                     </div>
-
-
-
-
-
-
-
-
-
+                    
+    
+                 
+                 
+                 
+                 
+                 
+                   
+             
                     <script>
                         /* Script written by Adam Khoury @ DevelopPHP.com */
                         /* Video Tutorial: http://www.youtube.com/watch?v=EraNFJiY0Eg */
@@ -344,7 +338,7 @@
                         }
                     </script>
 
-
+                   
                     <input type="file" name="file1" id="file1"><br>
                     <input  class="buton-wgraj" type="button" value="Wgraj plik" onclick="uploadFile()">
                     <progress id="progressBar" value="0" max="100" ></progress>
@@ -386,11 +380,11 @@
 
 
 
-                    <!--
+<!--
 <script>
-
+    
 function myFunction() {
-alert("Wiadomość została wysłana, dziękujemy!!!!");
+    alert("Wiadomość została wysłana, dziękujemy!!!!");
 }
 </script>
 -->
@@ -399,9 +393,9 @@ alert("Wiadomość została wysłana, dziękujemy!!!!");
 
 
                     <button  name="submit" type="submit" name="sendMail" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
-
-
-
+                    
+                    
+                    
 
 
                 </form>
