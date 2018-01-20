@@ -12,6 +12,7 @@ $machine=$_POST['machine'];
 $controler=$_POST['controler'];
 $sterowaneosie=$_POST['sterowaneosie'];
 $wiadomosc=$_POST['wiadomosc'];
+$oprogramowanie=$_POST['oprogramowanie'];
 
 
 // attachment name
@@ -73,6 +74,9 @@ $pdf->Cell(60,10,"Nazwa sterowania:",1,0);
 $pdf->Cell(130,10,$controler,1,1);
 $pdf->Cell(60,10,"Ilość osi:",1,0);
 $pdf->Cell(130,10,$sterowaneosie,1,1);
+$pdf->Cell(60,10,"Oprogramowanie CAM:",1,0);
+$pdf->Cell(130,10,$oprogramowanie,1,1);
+
 $pdf->Ln(20);
 $pdf->Cell(190,10,"Wiadomość: ",1,0,'C');
 $pdf->Ln(10);
@@ -148,4 +152,17 @@ header("location:javascript://history.go(-1)");  */
 }
 $loc = "location.href = 'http://cnc-post.pl/index.html#offer'";
 echo "<script type='text/javascript'>setTimeout($loc,1500);</script>";
+
+$filenametocustomer = iconv("utf-8", "iso-8859-2", "Formularz cnc-post.pl");
+// the message
+/*
+$msgtocustomer = "Witaj,\n Dziękujemy za wypełnienie formularza niebawem się skontaktujemy.";
+*/
+$msgtocustomer = iconv("utf-8", "iso-8859-2", "Proszę nie odpowiadać na tego maila!!!\n\nWitaj,\nDziękujemy za wypełnienie formularza niebawem się z Tobą skontaktujemy.\n\n Pozdrawiamy,\nZespół cnc-post.pl");
+
+// use wordwrap() if lines are longer than 70 characters
+$msgtocustomer = wordwrap($msgtocustomer,90);
+
+mail($email,$filenametocustomer,$msgtocustomer);
+
 ?>
