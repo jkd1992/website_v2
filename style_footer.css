@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 * {
+
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -14,18 +15,6 @@
 }
 
 
-
-/*.capbox {
-	background-color: #92D433;
-	border: #B3E272 0px solid;
-	border-width: 0px 12px 0px 0px;
-	display: inline-block;
-	display: inline; zoom: 1;  FOR IE7-8 
-	padding: 8px 40px 8px 8px;
-    position: relative;
-    margin: 0 0;
- 
-	}*/
 
 .capbox-inner {
 	font: bold 1.2rem Raleway, sans-serif;
