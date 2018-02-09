@@ -11,6 +11,7 @@ $phone1=$_POST['phone1'];
 $machine=$_POST['machine'];
 $controler=$_POST['controler'];
 $sterowaneosie=$_POST['sterowaneosie'];
+$oprogramowanie=$_POST['oprogramowanie'];
 $wiadomosc=$_POST['wiadomosc'];
 
 
@@ -73,6 +74,8 @@ $pdf->Cell(60,10,"Nazwa sterowania:",1,0);
 $pdf->Cell(130,10,$controler,1,1);
 $pdf->Cell(60,10,"Ilość osi:",1,0);
 $pdf->Cell(130,10,$sterowaneosie,1,1);
+$pdf->Cell(60,10,"Oprogramowanie CAM:",1,0);
+$pdf->Cell(130,10,$oprogramowanie,1,1);
 $pdf->Ln(20);
 $pdf->Cell(190,10,"Wiadomość: ",1,0,'C');
 $pdf->Ln(10);
@@ -131,14 +134,11 @@ $body .= "--".$separator."--";
 if(mail($to, $subject, $body, $headers))
 {
 
-
     $message2 = iconv("utf-8", "iso-8859-2", "Wiadomość została wysłana, dziękujemy!!!!");
 
     /*$message2 = "Wiadomość została wysłana, dziękujemy!!!!";*/
     //wykonanie skryptu w php za pomoca atrybutu echo
     echo "<script type='text/javascript'>alert('$message2');</script>";
-
-
 
 
     //cofnięcie się do strony index.html #offer po upływie 1500ms

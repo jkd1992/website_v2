@@ -34,7 +34,8 @@ header
     width: 100%;
     text-transform: uppercase;
     /*   color: #e74c3c;*/
-    /*color:#2d4262;  */  
+    /*color:#2d4262;  */ 
+    color: #2d4262;
 
     /*linear-gradient(139deg, #00C4CC 0%, #7D2AE8 100%)*/
 
@@ -71,7 +72,7 @@ header
 .aboutus-section{
 
     margin: 0 0;
-    padding: 0 0 ;
+    padding: 30px 0 ;
     width: 100%;
     box-sizing: border-box;
     height: 100vh;
@@ -82,6 +83,7 @@ header
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(images/cnc-jobs-in-greece.gif);
+   
 
 
 }
@@ -90,7 +92,7 @@ header
 {
 
     position:relative;
-    text-align: center;
+    text-align: left;
     padding: 0 0 ;
     /* margin-top: 50px;
     margin-bottom: 50px;*/
@@ -100,9 +102,15 @@ header
 
     font-size: 3.6em;
     font-family: Raleway, sans-serif;
-    text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
+    /*text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;*/
 
 
+}
+
+.aboutus-section-text span
+{
+        background: #00c4cc;
+    
 }
 
 .contact-form-section
@@ -116,13 +124,15 @@ header
     font-size: 2rem;
     text-align: center;
     width: 100%;
-    color: gold;
+    color: white;
+   
 }
 
 .aboutus-section a
 {
     color: gold;
     text-decoration: none;
+    
 }
 
 
@@ -293,6 +303,41 @@ header
     background-size: cover;
     overflow: hidden;
 }
+/*.aboutus-section .flex-container .programy-img:nth-child(4) {
+    position: relative;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    height: 250px;
+    width:45%;
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    background-color: white;
+    padding: 0;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 0px #AFAAA9;
+    margin:1em 3em 1em 3em;
+    box-sizing: border-box;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    flex-grow:3;
+    background-image: url(images/camworks_multiblade.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    overflow: hidden;
+}*/
 
 img {max-width:100%;}
 
@@ -328,7 +373,7 @@ img {max-width:100%;}
     top: -30%;
     left: -30%;
     transition-property: left, top, opacity;
-    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-duration: 0.3s, 0.3s, 0.15s;
     transition-timing-function: ease;
 }
 
@@ -337,7 +382,7 @@ img {max-width:100%;}
     top: 10%;
     left: -130%;
     transition-property: left, top, opacity;
-    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-duration: 0.3s, 0.3s, 0.15s;
     transition-timing-function: ease;
 }
 
@@ -378,14 +423,6 @@ img {max-width:100%;}
 
 
 
-
-
-
-
-
-
-
-
 /*MOJE DODATKOWE FUNKCJE */
 @media screen and (max-width: 850px) 
 {
@@ -395,8 +432,12 @@ img {max-width:100%;}
     }
     
 }
-@media screen and (max-width: 709px) {
-    
+@media screen and (max-width: 360px) {
+    html
+    {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     
 .logo-menu-mobile{
         z-index: 10;
@@ -420,6 +461,11 @@ img {max-width:100%;}
     .aboutus-section-text
     {
         font-size:2rem;
+    }
+    
+    .video-header
+    {
+        display: none;
     }
     
 }
